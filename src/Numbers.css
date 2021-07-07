@@ -1,5 +1,8 @@
 * {
-   font-family: Purisa;
+    font-family: Purisa, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,6 +33,7 @@ body {
 }
 
 input {
+    padding: .25rem;
     margin: .5rem;
     background: none;
     border-radius: .25rem;
