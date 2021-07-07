@@ -1,8 +1,8 @@
-import './App.css';
+import './Numbers.css';
 import React from "react";
 import Number from "./Number.jsx"
 
-export default class App extends React.Component {
+export default class Numbers extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,7 +33,7 @@ export default class App extends React.Component {
   render() {
     return (
         <>
-          <div>Lotto 6/49</div>
+          <div className="title">Lotto 6/49</div>
             {
                 this.state.show ?
                     <div className="numbers">
@@ -41,8 +41,11 @@ export default class App extends React.Component {
                     </div>
                 : null
             }
-          <input type="button" value="Reset" onClick={this.reset}/>
-          <input type="button" value="Show me lucky numbers" onClick={this.show}/>
+
+            <div className="buttons">
+                <input type="button" value="Reset" onClick={this.reset}/>
+                <input type="button" value="Show me lucky numbers" onClick={this.show}/>
+            </div>
         </>
     )
   }

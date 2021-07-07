@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Numbers from './Numbers.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Numbers />
   </React.StrictMode>,
   document.getElementById('root')
 );
